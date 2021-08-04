@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD STUDENT DETAILS</title>
+</head>
+<body>    
+    <form action="/addstudent" method="POST" onsubmit="alert('Student Details Added')">
+        <h1>ADD STUDENT DETAILS</h1>
+        <div class="main-container">  
+            <label for="studentid"><b>STUDENT ID</b></label>
+            <input type="text" name="studentid" placeholder="STUDENT ID" required>
+
+            <label for="studentname"><b>STUDENT NAME</b></label>
+            <input type="text" placeholder="STUDENT NAME" name="studentname" required>
+
+            <label><b>GENDER</b></label>
+            <div class="gender">
+                <div > 
+                    <input type="radio" name="gender" value="Male" id="male" />
+                    <label for="male"><b>MALE</b></label>
+                </div>   
+                <div > 
+                <input type="radio" name="gender" value="Female" id="female" />
+                <label for="female"><b>FEMALE</b></label>
+                </div>
+            </div>
+
+            <label for="dateofbirth"><b>DATE OF BIRTH</b></label>
+            <input type="date" name="dateofbirth" id="dateofbirth">
+            
+            <label for="city"><b>CITY</b></label>
+            <input type="text" placeholder="CITY" name="city" required>
+
+            <label for="state"><b>STATE</b></label>
+            <input type="text" placeholder="STATE" name="state" required>
+
+            <label for="email"><b>EMAIL</b></label>
+            <input type="email" placeholder="EMAIL" name="email" required>
+
+            <label for="qualification"><b>QUALIFICATION</b></label>
+            <input type="text" placeholder="QUALIFICATION" name="qualification" required>
+
+            <label for="stream"><b>STREAM</b></label>
+            <input type="text" placeholder="STREAM " name="stream" required>
+
+            <button type="submit" class="btn">Sign Up</button>
+        </div>
+  </form>
+  <style>
+      @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
+
+    body {
+        font-family: Montserrat,Arial, Helvetica, sans-serif;
+        background-color:#f7f7f7;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .main-container {
+        padding: 20px;
+        width:500px;
+        border:1px solid #ccc;
+        border-radius:10px;
+        background:white;
+        box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+    }
+
+    .gender{
+        width: 95%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f7f7f7;
+        font-family: Montserrat,Arial, Helvetica, sans-serif;
+    }
+
+    h1{
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    
+
+
+    input[type=text], input[type=email],input[type=date] {
+    width: 95%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f7f7f7;
+    font-family: Montserrat,Arial, Helvetica, sans-serif;
+    }
+
+    input[type=text]:focus, input[type=email]:focus, input[type=date]:focus{
+        background-color: #ddd;
+        outline: none;
+    }
+
+
+
+    button {
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size:16px;
+    font-family: Montserrat,Arial, Helvetica, sans-serif;
+    border-radius:10px;
+    }
+
+    button:hover {
+    opacity:1;
+    }
+  </style>
+</body>
+</html>
